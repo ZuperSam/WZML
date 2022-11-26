@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "zubzero-11ef"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "zubzero-11ef"
+  template:
+    metadata:
+      labels:
+        app: "zubzero-11ef"
+    spec:
+      containers:
+        - name: "zubzero-11ef"
+          image: "nsfwbot.azurecr.io/zubzero"
+          ports:
+          - containerPort: 80
