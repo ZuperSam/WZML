@@ -39,3 +39,4 @@ yt-dlp
 waybackpy
 pymongo
 pycountry
+imdb
